@@ -231,12 +231,3 @@ while True:
     if user_query.lower() == 'sair':
         break
     recommend_gpus(user_query, tfidf_matrix, df_gpus, tfidf_vectorizer)
-
-"""### Como Rodar os Códigos
-Para executar este notebook e obter as recomendações de GPU, siga estes passos:
-
-1. **Certifique-se de que o arquivo 'Graphics Card Database.xlsx' esteja presente** no mesmo diretório deste notebook. O primeiro código o lerá e criará o arquivo `gpu_dataset_combinado.csv`.
-2. **Execute as células de código em sequência.** Há três células de código principais: "Carregamento de Dados e Pré-processamento Inicial", "Engenharia de Features" e "Processamento de Texto (TF-IDF) e Sistema de Recomendação".
-3. **A última célula iniciará o sistema de recomendação interativo.** Você será solicitado a digitar sua busca por GPU.
-4. **Para encerrar o sistema**, digite 'sair'.
-"""
